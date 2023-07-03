@@ -1,19 +1,11 @@
-import Navigation from "./Navigation";
-import logoAGH from "../assets/logo-agh.svg"
-import logoWZ from "../assets/logo-wz.png"
+import GetStartedButton from "./GetStartedButton";
+import GetStartedInfo from "./GetStartedInfo";
 
 const Header = () => {
     return (
-        <div className="Header">
-            <div className="header-container page-container">
-                <div className="logo-wrapper">
-                    <img src={logoAGH} className="logo-agh"></img>
-                    <img src={logoWZ} className="logo-wz"></img>
-                </div>
-                <Navigation/>
-            </div>
+        <div>
+            Header
         </div>
     );
 }
-
 export default Header;
