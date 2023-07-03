@@ -1,0 +1,21 @@
+.Contest .page-title {
+    margin: 30px 0;
+}
+.ant-tabs .ant-tabs-tab-btn {
+    font-weight: bold;
+}
+.ant-tabs-top {
+    margin-top: 20px;
+}
+.Contest .details-box {
+    margin-top: 65px;
+}
+.Contest .clubs-wrapper {
+    justify-content: flex-start;
+}
+.clubCard.active {
+    border: 1px solid #820263;
+}
+.Contest .ant-table-content {
+    overflow: hidden;
+}

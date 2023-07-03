@@ -1,0 +1,49 @@
+.Header {
+    background: black;
+    border-bottom: 10px solid #216575;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+.logo-wz {
+    height: 60px;
+}
+.logo-agh {
+    margin-right: 10px;
+    height: 50px;
+}
+
+.Navigation {
+    height: fit-content;
+    color: white;
+    background: black;
+    font-weight: 600;
+    width: 660px;
+    justify-content: end;
+}
+.Navigation .ant-menu-item,
+.Navigation .ant-menu-submenu {
+    padding-inline: 10px;
+}
+.Navigation.ant-menu-overflow li:last-child {
+    padding-inline-end: 0px;
+}
+.Navigation .ant-menu-submenu:after,
+.Navigation .ant-menu-submenu:hover:after,
+.Navigation .ant-menu-item:after,
+.Navigation .ant-menu-item:hover:after {
+    display: none;
+}
+.Navigation.ant-menu-light.ant-menu-horizontal > .ant-menu-item-selected,
+.Navigation .ant-menu-item:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected),
+.Navigation .ant-menu-submenu-title:hover:not(.ant-menu-item-selected):not(.ant-menu-submenu-selected) {
+    color: white;
+}

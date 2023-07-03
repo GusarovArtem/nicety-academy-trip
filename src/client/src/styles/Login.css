@@ -1,0 +1,19 @@
+.Login,
+.ResetPassword {
+    margin-top: 80px;
+}
+
+.login-form,
+.reset-pass-form {
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    padding: 20px 20px 20px 20px;
+    margin: 40px auto;
+    max-width: 600px;
+}
+@media screen and (max-width: 575px) {
+    .Login .ant-col-offset-4,
+    .ResetPassword  .ant-col-offset-4 {
+        margin-inline-start: 0;
+    }
+}
