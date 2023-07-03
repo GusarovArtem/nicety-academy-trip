@@ -1,19 +1,17 @@
-package academy.model.trip;
+package academy.model.course.tech;
 
 import lombok.Data;
 
 import jakarta.persistence.*;
-import java.util.Date;
 
 @Data
 @Entity
-public class SponsoredTrip {
+public class ProgrammingLanguage {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private Date sponsoredTo;
+    private String name;
 
-    @OneToOne
-    private Trip trip;
 }

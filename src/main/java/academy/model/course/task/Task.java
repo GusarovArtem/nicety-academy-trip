@@ -1,10 +1,10 @@
-package academy.model.task;
+package academy.model.course.task;
 
-import academy.model.tech.Technology;
-import academy.model.trip.calendar.day.TripCalendarDay;
+import academy.model.course.tech.Technology;
+import academy.model.course.module.Module;
+import jakarta.persistence.*;
 import lombok.Data;
 
-import jakarta.persistence.*;
 import java.util.List;
 
 @Data
@@ -15,13 +15,13 @@ public class Task {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    private TaskStatus status;
+
     @ManyToOne
-    private Task task;
+    private Module module;
 
     @ManyToMany
     private List<Technology> technologies;
 
-    @ManyToOne
-    private TripCalendarDay day;
 
 }

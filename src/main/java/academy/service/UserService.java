@@ -1,16 +1,32 @@
 package academy.service;
 
-//import academy.repository.UserRepository;
-//import org.springframework.beans.factory.annotation.Autowired;
-//import org.springframework.stereotype.Service;
+import academy.model.user.AcademyUser;
+import academy.repository.user.UserRepository;
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
-//@Service
-//public class UserService {
-//    private final UserRepository userRepository;
-//
-//    @Autowired
-//    public UserService(UserRepository userRepository) {
-//        this.userRepository = userRepository;
-//    }
-//
-//}
+import java.util.List;
+
+@Service
+@RequiredArgsConstructor
+public class UserService {
+
+    @Autowired
+    private UserRepository userRepository;
+
+    public List<AcademyUser> getAll() {
+        return userRepository.findAll();
+    }
+    
+    public void save(AcademyUser user) {
+        userRepository.save(user);
+    }
+
+    
+    
+    public AcademyUser getByEmail(String email) {
+        return userRepository.getByEmail(email);
+    }
+
+}
