@@ -3,7 +3,7 @@ const GetStartedButton = () => {
         <button className="button">
             <a
                 className="App-link"
-                href="https://reactjs.org"
+                href="http://localhost:8081/user/index"
                 target="_blank"
                 rel="noopener noreferrer"
             >
