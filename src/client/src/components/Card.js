@@ -6,7 +6,7 @@ const Card = ({ header, title, text, color }) => {
 
     const headerStyle = {
         backgroundColor: color,
-        color: 'white',
+        color: 'black',
     };
 
     return (
@@ -14,7 +14,7 @@ const Card = ({ header, title, text, color }) => {
             <div className="card-header" style={headerStyle}>
                 {header}
             </div>
-            <div className="card-body">
+            <div className="card-body" style={{ color: 'black'}}>
                 <h5 className="card-title">{title}</h5>
                 <p className="card-text">{text}</p>
             </div>
