@@ -2,7 +2,7 @@ import React from 'react';
 
 function Navbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light" style={{backgroundColor: '#e3f2fd'}}>
+        <nav className="navbar navbar-expand-lg navbar-light" style={{width: '100%', backgroundColor: '#e3f2fd'}}>
             <a className="navbar-brand" href="#">Navbar</a>
             <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
                     aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
@@ -27,12 +27,12 @@ function Navbar() {
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                         <a className="nav-link btn"
-                           style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}} href="#">Sign
-                            Up</a>
+                           style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}}
+                           href="/user/register">Sign Up</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn" style={{backgroundColor: "white", color: "black"}} href="#">Log
-                            In</a>
+                        <a className="nav-link btn"
+                           style={{backgroundColor: "white", color: "black"}} href="/user/login">Log In</a>
                     </li>
 
                 </ul>
