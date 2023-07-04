@@ -1,6 +1,7 @@
 import './styles/App.css';
 import GetStarted from "./components/get-started/GetStarted";
-import Header from "./components/Header";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import Body from "./components/Body";
 
 
@@ -8,11 +9,12 @@ function App() {
     return (
 
         <div className="App">
-            <Header/>
+            <Navbar/>
             <header className="App-header">
                 <Body/>
                 <GetStarted/>
             </header>
+            <Footer/>
         </div>
     );
 }
