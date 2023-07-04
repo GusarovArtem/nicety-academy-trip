@@ -1,7 +1,7 @@
 import './styles/App.css';
 import GetStarted from "./components/get-started/GetStarted";
-import logo from './assets/logo.svg';
 import Header from "./components/Header";
+import Body from "./components/Body";
 
 
 function App() {
@@ -10,7 +10,7 @@ function App() {
         <div className="App">
             <Header/>
             <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo"/>
+                <Body/>
                 <GetStarted/>
             </header>
         </div>
