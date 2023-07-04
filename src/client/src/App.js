@@ -3,8 +3,10 @@ import GetStarted from "./components/get-started/GetStarted";
 import logo from './assets/logo.svg';
 import Header from "./components/Header";
 
+
 function App() {
     return (
+
         <div className="App">
             <Header/>
             <header className="App-header">
