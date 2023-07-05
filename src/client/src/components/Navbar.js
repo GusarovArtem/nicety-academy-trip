@@ -12,29 +12,43 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#">My Journey<span className="sr-only">(current)</span></a>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Features</a>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" id="catalogDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Catalog
+                        </a>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a className="dropdown-item" href="#">Java</a>
+                            <a className="dropdown-item" href="#">Python</a>
+                            <div className="dropdown-divider">JavaScript</div>
+                            <a className="dropdown-item" href="#">PHP</a>
+                        </div>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">Pricing</a>
+                    <li className="nav-item dropdown">
+                        <a className="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Resources</a>
+                        <div className="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a className="dropdown-item" href="#">Library</a>
+                            <a className="dropdown-item" href="#">Tech Interview</a>
+                            <div className="dropdown-divider"></div>
+                            <a className="dropdown-item" href="#">Weekend Podcasts</a>
+                        </div>
                     </li>
-                    <li className="nav-item">
-                        <a className="nav-link" href="#">About</a>
+                    <li>
+                        <button type="button" className="btn btn-primary">Make own project</button>
                     </li>
                 </ul>
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                         <a className="nav-link btn"
-                           style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}} href="#">Sign
-                            Up</a>
+                           style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}} href="#">Join</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn" style={{backgroundColor: "white", color: "black"}} href="#">Log
-                            In</a>
+                        <a className="nav-link btn" style={{backgroundColor: "white", color: "black"}} href="#">Login</a>
                     </li>
-
                 </ul>
             </div>
         </nav>
