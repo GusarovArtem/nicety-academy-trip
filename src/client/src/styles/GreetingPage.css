@@ -25,6 +25,28 @@ body {
     z-index: 100;
 }
 
+@media (min-width: 768px) {
+    .navbar-menu {
+        border-radius: 4px;
+    }
+}
+
+.navbar-menu {
+    position: relative;
+    min-height: 50px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+}
+
+.navbar-menu a {
+    font-size: 18px;
+    color: black;
+    text-decoration: none;
+    margin-left: 15px;
+    transition: .3s;
+    font-weight: bold;
+}
+
 .logo {
     font-size: 25px;
     color: black;
@@ -86,7 +108,7 @@ body {
 
 .text-with-image {
     display: flex;
-    margin: 25px;
+    justify-content: space-around;
 }
 
 
