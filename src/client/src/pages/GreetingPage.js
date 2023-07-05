@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/GreetingPage.css';
 import background_image from '../assets/background-image.svg';
+import Footer from "../components/Footer";
 
 function GreetingPage() {
     return (
@@ -43,6 +44,7 @@ function GreetingPage() {
                 </section>
                 <img src={background_image} alt="Background" style={{marginTop: '-50px', width: '35%'}}/>
             </div>
+            <Footer/>
         </div>
     );
 }
