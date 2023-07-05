@@ -12,7 +12,7 @@ function Navbar() {
             <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav mr-auto">
                     <li className="nav-item active">
-                        <a className="nav-link" href="#">My Journey<span className="sr-only">(current)</span></a>
+                        <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
                     </li>
                     <li className="nav-item dropdown">
                         <a className="nav-link dropdown-toggle" href="#" id="catalogDropdown" role="button"
@@ -44,11 +44,14 @@ function Navbar() {
                 <ul className="navbar-nav ml-auto">
                     <li className="nav-item">
                         <a className="nav-link btn"
-                           style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}} href="#">Join</a>
+                           style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}} href="/user/register">Sign
+                            Up</a>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link btn" style={{backgroundColor: "white", color: "black"}} href="#">Login</a>
+                        <a className="nav-link btn" style={{backgroundColor: "white", color: "black"}} href="/user/login">Log
+                            In</a>
                     </li>
+
                 </ul>
             </div>
         </nav>

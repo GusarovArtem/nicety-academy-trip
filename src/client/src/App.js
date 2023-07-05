@@ -1,21 +1,18 @@
 import './styles/App.css';
-import GetStarted from "./components/get-started/GetStarted";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
-import Body from "./components/Body";
-
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import LoginPage from "./pages/LoginPage";
+import GreetingPage from "./pages/GreetingPage";
+import RegisterPage from "./pages/RegisterPage";
 
 function App() {
     return (
-
-        <div className="App">
-            <Navbar/>
-            <header className="App-header">
-                <Body/>
-                <GetStarted/>
-            </header>
-            <Footer/>
-        </div>
+        <Router>
+                <Switch>
+                    <Route path="/user/register" component={RegisterPage} />
+                    <Route path="/user/login" component={LoginPage} />
+                    <Route path="/" component={GreetingPage} />
+                </Switch>
+        </Router>
     );
 }
 
