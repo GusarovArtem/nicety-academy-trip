@@ -2,6 +2,7 @@ package academy.model.course.task;
 
 import academy.model.course.tech.Technology;
 import academy.model.course.module.Module;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
 
@@ -17,9 +18,11 @@ public class Task {
 
     private TaskStatus status;
 
+    @JsonIgnore
     @ManyToOne
     private Module module;
 
+    @JsonIgnore
     @ManyToMany
     private List<Technology> technologies;
 

@@ -1,6 +1,7 @@
 package academy.model.user;
 
 import academy.model.user.role.Role;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import jakarta.persistence.*;
@@ -31,6 +32,7 @@ public class AcademyUser {
     @Size(max = 120)
     protected String password;
 
+    @JsonIgnore
     @ManyToMany(fetch = FetchType.LAZY)
     @JoinTable(name = "user_roles",
             joinColumns = @JoinColumn(name = "user_id"),

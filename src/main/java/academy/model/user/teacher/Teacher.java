@@ -2,6 +2,7 @@ package academy.model.user.teacher;
 
 import academy.model.course.Course;
 import academy.model.user.AcademyUser;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.Data;
 
 import jakarta.persistence.Entity;
@@ -12,6 +13,7 @@ import java.util.List;
 @Entity
 public class Teacher extends AcademyUser {
 
+    @JsonIgnore
     @OneToMany(mappedBy = "teacher")
     private List<Course> courses;
 
