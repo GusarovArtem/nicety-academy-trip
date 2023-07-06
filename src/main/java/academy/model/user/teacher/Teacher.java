@@ -2,14 +2,10 @@ package academy.model.user.teacher;
 
 import academy.model.course.Course;
 import academy.model.user.AcademyUser;
-import jakarta.persistence.*;
 import lombok.Data;
 
-import java.util.List;
-
-import jakarta.persistence.*;
-import lombok.Data;
-
+import jakarta.persistence.Entity;
+import jakarta.persistence.OneToMany;
 import java.util.List;
 
 @Data
@@ -18,5 +14,6 @@ public class Teacher extends AcademyUser {
 
     @OneToMany(mappedBy = "teacher")
     private List<Course> courses;
+
 
 }

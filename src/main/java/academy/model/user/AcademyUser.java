@@ -1,11 +1,14 @@
 package academy.model.user;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import academy.model.user.role.Role;
 import lombok.Data;
-import lombok.Getter;
+
+import jakarta.persistence.*;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
+import java.util.HashSet;
+import java.util.Set;
 
 @Data
 @Entity
@@ -15,13 +18,33 @@ public class AcademyUser {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    private String firstName;
+    @NotBlank
+    @Size(max = 20)
+    protected String username;
 
-    private String lastName;
+    @NotBlank
+    @Size(max = 50)
+    @Email
+    protected String email;
 
-    private String email;
+    @NotBlank
+    @Size(max = 120)
+    protected String password;
 
-    private String password;
+    @ManyToMany(fetch = FetchType.LAZY)
+    @JoinTable(name = "user_roles",
+            joinColumns = @JoinColumn(name = "user_id"),
+            inverseJoinColumns = @JoinColumn(name = "role_id")
+    )
+    protected Set<Role> roles = new HashSet<>();
 
+    public AcademyUser(String username, String email, String password) {
+        this.username = username;
+        this.email = email;
+        this.password = password;
+    }
 
+    public AcademyUser() {
+
+    }
 }

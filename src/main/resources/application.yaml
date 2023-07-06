@@ -11,3 +11,10 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
+
+auth:
+  header: Authorization
+  jwt:
+    secret: XUlkPxDr620G6sz2OC40sXvkaqzeFeeFTm93A0BMLbWXFKb5SzFdTAsJgLoOzSWTUAhcTvoe5KiYPDg3wif1Ew
+#    algorithm: HS512
+    expiration-ms: 7200000 # 2 hours

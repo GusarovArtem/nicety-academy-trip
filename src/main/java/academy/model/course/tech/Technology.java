@@ -3,8 +3,8 @@ package academy.model.course.tech;
 import jakarta.persistence.*;
 import lombok.Data;
 
-import javax.validation.constraints.Max;
-import javax.validation.constraints.Min;
+import jakarta.validation.constraints.Max;
+import jakarta.validation.constraints.Min;
 
 @Data
 @Entity

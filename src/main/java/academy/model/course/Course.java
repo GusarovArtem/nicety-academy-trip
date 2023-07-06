@@ -3,9 +3,9 @@ package academy.model.course;
 import academy.model.course.tech.ProgrammingLanguage;
 import academy.model.user.client.Client;
 import academy.model.user.teacher.Teacher;
-import jakarta.persistence.*;
 import lombok.Data;
 
+import jakarta.persistence.*;
 import java.util.List;
 
 @Data
