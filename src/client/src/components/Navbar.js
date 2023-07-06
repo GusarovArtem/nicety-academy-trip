@@ -26,11 +26,11 @@ function Navbar() {
             <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
                     <a className="nav-link btn"
-                       style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}} href="/user/register">Sign
+                       style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}} href="/auth/signup">Sign
                         Up</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link btn" style={{backgroundColor: "#FBD851", color: "black"}} href="/user/login">Log
+                    <a className="nav-link btn" style={{backgroundColor: "#FBD851", color: "black"}} href="/auth/login">Log
                         In</a>
                 </li>
             </ul>

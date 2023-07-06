@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-const RegisterPage = () => {
+const SignupPage = () => {
     const [username, setUsername] = useState('');
     const [password, setPassword] = useState('');
 
@@ -105,7 +105,7 @@ const RegisterPage = () => {
                                                 style={{paddingLeft: '2.5rem', paddingRight: '2.5rem'}}>Login
                                         </button>
                                         <p className="small fw-bold mt-2 pt-1 mb-0">Already have an account? <a
-                                            href="/user/login"
+                                            href="/auth/login"
                                             className="link-danger">Log In</a></p>
                                     </div>
 
@@ -120,4 +120,4 @@ const RegisterPage = () => {
     );
 };
 
-export default RegisterPage;
+export default SignupPage;

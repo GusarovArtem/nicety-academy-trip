@@ -28,9 +28,9 @@ function GreetingPage() {
                     <a href="#">Contacts</a>
                     <a className="nav-link btn font-bold"
                        style={{backgroundColor: "#FBD851", color: "black", marginRight: "10px"}}
-                       href="/user/register">Sign up</a>
+                       href="/auth/signup">Sign up</a>
                     <a className="nav-link btn font-bold" style={{backgroundColor: "rgb(255 240 240)", marginLeft: '5px', color: "black"}}
-                       href="/user/login">Log in</a>
+                       href="/auth/login">Log in</a>
                 </nav>
             </header>
             <div className="text-with-image">
